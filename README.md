@@ -3,15 +3,15 @@ Pipeline for analysis of CUT&RUN and CUT&TAG data - can also used for ChIPseq (S
 
 ## Summary of pipeline:
 
-1. Trim all reads to remove adaptors and sequences with very low quality (bbduck or trimgalore). 
-2. QC check (fastqc)
-3. mapping (bowtie2) - (previous generation of genome indexes and getting latest genome and annotations)
-4. optional: multiQC (to get report on general stats on all libraries)
-5. filtering with samtools if needed (and indexing, sorting,etc)
-6. statistics on libraries (deeptools) # fancier stats to look at quality of libraries. 
-7. making bigwig files (deeptools) # normalization, excluding duplicates, others.
-8. Plotting (deeptools)
-9. visualization (higlass)
+1. Trimming # trim all reads to remove adaptors and sequences with very low quality (bbduck or trimgalore). 
+2. QC check # quick check on total # reads and quality (fastqc)
+3. mapping # (bowtie2 -needs previous generation of genome indexes and getting latest genome and annotations)
+4. QC check # optional: multiQC (to get report on general stats on all libraries)
+5. filtering, indexing, sorting # samtools 
+6. statistics on libraries # fancier stats to look at quality of libraries (deeptools). 
+7. making bigwig files # normalization, excluding duplicates, others (deeptools).
+8. Plotting # (deeptools)
+9. visualization # (higlass) - installation is complicated - I provide on a separate branch some scripts to help on this. But once it works, it is awesome.
 
 Intended for Biologists w/o little experience in Computational Biology - I provide all scripts in the right order for you to be able to run the entire analysis. I provide notes below on main parameters used.
 I typically batch jobs on the cluster, so most scripts are intended for this. Running one by one is highly recommended if you are learning and this is your first time running an entire pipeline for analysis. It will get you familiarized with many things in comp.bio.
