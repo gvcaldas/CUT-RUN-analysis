@@ -1,4 +1,4 @@
-## CUT-RUN-analysis
+## CUT&RUN and CUT&TAG analysis
 Pipeline for analysis of CUT&RUN and CUT&TAG data - can also used for ChIPseq (SE, PE) after modifying few parameters.
 ## UNDER CONSTRUCTION
 
