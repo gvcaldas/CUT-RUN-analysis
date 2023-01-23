@@ -16,6 +16,15 @@ done
 
 ## Alternative: if you want to run all pipeline per sample, this would be the part for trimming
 
+# set up variables
+# forward and reverse reads
+R1=${NAME}_1.fastq
+R2=${NAME}_2.fastq
+
+# fastq files after adapter trimming step
+TRIM_R1=${NAME}_trim_1.fastq.gz
+TRIM_R2=${NAME}_trim_2.fastq.gz
+
 echo "starting adapter trimming with bbduk"
 bbduk.sh -Xmx1g in1=${R1} in2=${R2} out1=${TRIM_R1} out2=${TRIM_R2} ref=adapters.fa ktrim=r k=23 mink=11 hdist=1 tpe tbo
 # Arguments:
