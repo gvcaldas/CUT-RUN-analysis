@@ -1,5 +1,4 @@
-
-source activate CUTRUN
+## I like to change the long names from the sequencing facility. This is an easy way to do it in python. 
 
 python
 import os
