@@ -1,4 +1,4 @@
-########## Step 8: estimate the reads that will be filtered under the paramaters chosen in downstream analysis ##########
+########## Step 5: estimate the reads that will be filtered under the paramaters chosen in downstream analysis ##########
 
 # Documentation:
 # https://deeptools.readthedocs.io/en/develop/content/tools/estimateReadFiltering.html
